@@ -17,8 +17,8 @@ const authority = `cognito-idp.${region}.amazonaws.com/${userPoolId}`;
 const testBucket = "657653087923-test-bucket";
 
 /* Prerequisites
-    1. all the stuff above (user, identity and user pools) have been created 
-    2. the identity pool has been setup to grant username read access to testBucket either via
+    1. all the stuff above (user, identity and user pools) have been created in your aws account
+    3. the identity pool has been setup to grant username read access to testBucket either via
         a. an Authenticated User role
         b. a rule
         c. a rolename in the cognito session token (if you figure out how to do that, tell me!)
